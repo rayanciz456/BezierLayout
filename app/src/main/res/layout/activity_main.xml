@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ray.bezierlayout.BezierLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:visibility="visible"
+    app:paint_axis="left_to_right"
+    app:path_background="#909DFBA1"
+    app:strokeColor="@color/purple_500"
+    app:strokeWidth="8dp"
+    app:strokeCap="square"
+    tools:context="com.ray.bezierlayout.MainActivity">
+
+
+    <com.ray.bezierlayout.AnchorView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="304dp"
+        android:background="@drawable/circle"
+        android:visibility="invisible"
+        app:anchor_position="left|bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:order="0"
+        app:visible_on_screen="true" />
+
+    <com.ray.bezierlayout.AnchorView
+        android:id="@+id/anchor_middle"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/circle"
+        android:visibility="visible"
+        app:anchor_position="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:order="1"
+        app:visible_on_screen="true" />
+
+    <com.ray.bezierlayout.AnchorView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/circle"
+        android:visibility="invisible"
+        app:anchor_position="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:order="2"
+        app:visible_on_screen="true" />
+
+
+</com.ray.bezierlayout.BezierLayout>

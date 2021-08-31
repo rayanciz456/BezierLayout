@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AnchorView">
+
+        <attr name="order" format="integer"/>
+
+        <attr name="anchor_position">
+            <flag name="top" value="1"/>
+            <flag name="bottom" value="2"/>
+            <flag name="left" value="4"/>
+            <flag name="right" value="8"/>
+            <flag name="center_vertical" value="16"/>
+            <flag name="center_horizontal" value="32"/>
+            <flag name="center" value="64"/>
+        </attr>
+
+
+        <attr name="visible_on_screen" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="BezierLayout">
+        <attr name="strokeColor" format="color"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="path_background" format="color"/>
+        <attr name="paint_axis" format="enum">
+            <enum name="top_to_bottom" value="1"/>
+            <enum name="bottom_to_top" value="2"/>
+            <enum name="left_to_right" value="3"/>
+            <enum name="right_to_left" value="4"/>
+        </attr>
+        <attr name="strokeCap" format="enum">
+            <enum name="round" value="1"/>
+            <enum name="butt" value="2"/>
+            <enum name="square" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>
